@@ -1,11 +1,9 @@
-package module3.robot;
+package module3.step3;
 
-/**
- * Created by ypereyaslov on 25.01.2017.
- */
+
 public class MapsR {
 
-    //size maps for way robot
+    //size maps for way step3
     private int Y = 11;
     private int X = 11;
     private int[][] arr = new int[X][Y];

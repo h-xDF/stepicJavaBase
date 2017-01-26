@@ -1,6 +1,4 @@
-package module3.robot;
-
-import java.util.Map;
+package module3.step3;
 
 /**
  * Created by ypereyaslov on 21.01.2017.
