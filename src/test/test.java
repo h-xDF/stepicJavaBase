@@ -1,6 +1,7 @@
 package test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 
 /**
@@ -12,12 +13,7 @@ public class test {
     public static void main(String[] args) {
 
         ArrayList<Integer> list = new ArrayList<Integer>();
-        list.add(1);
-        list.add(3);
-        list.add(1);
-        list.add(2);
-        list.add(1);
-
+        list.addAll(Arrays.asList(1,2,32,4));
 
         Iterator<Integer> it = list.iterator();
         while (it.hasNext()){
