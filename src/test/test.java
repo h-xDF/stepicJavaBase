@@ -12,7 +12,7 @@ public class test {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        newArray<Integer> list = new newArray<Integer>();
         list.addAll(Arrays.asList(1,2,32,4));
 
         Iterator<Integer> it = list.iterator();
