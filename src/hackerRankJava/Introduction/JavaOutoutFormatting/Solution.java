@@ -1,4 +1,4 @@
-package hackerRankJava.JavaOutoutFormatting;
+package hackerRankJava.Introduction.JavaOutoutFormatting;
 
 import java.util.Scanner;
 
@@ -11,8 +11,10 @@ public class Solution {
         {
             String s1 = sc.next();
             int x = sc.nextInt();
-            String bifFormat = String.valueOf(x);
-            System.out.printf("%s%15d%03d",s1,"",x);
+            //String bifFormat = String.valueOf(x);
+            //System.out.printf(s1 + "%16s%03d%n","",x);
+            System.out.printf("%-15s%03d%n",s1,x);
+            System.out.printf("%-15s%03d%n",s1,x);
 
             //System.out.printf("%07d");
             //Complete this line

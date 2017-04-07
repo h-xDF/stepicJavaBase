@@ -1,4 +1,4 @@
-package hackerRankJava.JavaStdin;
+package hackerRankJava.Introduction.JavaStdin;
 
 import java.util.Scanner;
 
