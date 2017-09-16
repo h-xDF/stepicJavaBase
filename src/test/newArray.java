@@ -1,12 +1,15 @@
+/*
 package test;
 
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
+*/
 /**
  * Created by ypereyaslov on 17.02.2017.
- */
+ *//*
+
 public class newArray<E> extends ArrayList<E> {
 
 
@@ -82,3 +85,4 @@ public class newArray<E> extends ArrayList<E> {
         }
     }
 }
+*/
