@@ -9,12 +9,13 @@ public class Sample {
 
         Robot robot = new Robot();
 
-        moveRobot(robot, -1, -1);
+        moveRobot(robot, 0, 0);
 
         robot.print();
     }
 
     public static void moveRobot(Robot robot, int toX, int toY) {
+
         int deltaX = toX - robot.getX();
         int deltaY = toY - robot.getY();
 
@@ -36,12 +37,14 @@ public class Sample {
     }
 
     private static void stepRobot(Robot robot, int delta) {
+
         for (int i = 0; i < delta; i++) {
             robot.stepForward();
         }
     }
 
     private static void rotationRobot(Robot robot, Robot.Direction target) {
+
         Robot.Direction aim = robot.getDirection();
         if ((aim.equals(Robot.Direction.UP) && target.equals(Robot.Direction.RIGHT)) ||
                 (aim.equals(Robot.Direction.RIGHT) && target.equals(Robot.Direction.DOWN)) ||
@@ -54,6 +57,5 @@ public class Sample {
                 aim = robot.getDirection();
             }
         }
-
     }
 }

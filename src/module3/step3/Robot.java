@@ -1,8 +1,5 @@
 package module3.step3;
 
-/**
- * Created by ypereyaslov on 21.01.2017.
- */
 public class Robot {
 
     private MapsR mapsR = new MapsR(); // for visual
