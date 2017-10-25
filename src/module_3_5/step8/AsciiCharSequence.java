@@ -2,6 +2,8 @@ package module_3_5.step8;
 
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.CharsetEncoder;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
 public class AsciiCharSequence implements CharSequence {
 
@@ -11,8 +13,6 @@ public class AsciiCharSequence implements CharSequence {
         this.value = value;
     }
 
-    //String
-
     @Override
     public int length() {
         return value.length;
@@ -20,25 +20,19 @@ public class AsciiCharSequence implements CharSequence {
 
     @Override
     public char charAt(int index) {
-        return Character.highSurrogate(value[index]);
+
+        return (char) value[index];
     }
 
     @Override
     public CharSequence subSequence(int start, int end) {
-        return this.subSequence(start, end - 1);
+
+        return new AsciiCharSequence(Arrays.copyOfRange(value, start, end));
     }
 
     @Override
     public String toString() {
-        StringBuilder buf = new StringBuilder();
-        for(byte element: value) {
-            buf.append();
-        }
-        return buf;
+       //return Arrays.toString(value);
+        return new String(value, StandardCharsets.US_ASCII);//ISO_8859_1);
     }
-
-
-    /*public CharSequence subSequence(int beginIndex, int endIndex) {
-        return this.substring(beginIndex, endIndex);
-    }*/
 }

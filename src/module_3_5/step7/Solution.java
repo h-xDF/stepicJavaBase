@@ -3,8 +3,9 @@ package module_3_5.step7;
 import java.util.function.DoubleUnaryOperator;
 
 /**
- * Created by ypereyaslov on 24.10.2017.
+ * integration function
  */
+
 public class Solution {
 
     public static void main(String[] args) {
