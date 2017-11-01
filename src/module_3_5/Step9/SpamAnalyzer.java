@@ -1,4 +1,4 @@
-package module_3_5.Step9;
+package module_3_5.step9;
 
 public class SpamAnalyzer extends KeywordAnalyzer {
 

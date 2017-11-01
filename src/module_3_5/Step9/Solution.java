@@ -1,14 +1,35 @@
-package module_3_5.Step9;
+package module_3_5.step9;
 
 public class Solution {
     public static void main(String[] args) {
 
+        String[] spamKeywords = {"spam", "bad"};
+        int commentMaxLength = 40;
+
+        //String text = "Very bad, very neg =(, very ..................";
+        String text = "This baaccccccccccccccccccddd =( comment is so good.";
+
+        TextAnalyzer[] textAnalyzers1 = {
+                new SpamAnalyzer(spamKeywords),
+                new NegativeTextAnalyzer(),
+                new TooLongTextAnalyzer(commentMaxLength)
+        };
+
+        checkLabels(textAnalyzers1, text);
+
+
+    /*public Label checkLabels(TextAnalyzer[] analyzers, String text) {
+        return Label.OK;*/
     }
 
-    public Label checkLabels(TextAnalyzer[] analyzers, String text) {
+    public static  Label checkLabels(TextAnalyzer[] analyzers, String text) {
+
+        for (TextAnalyzer analyzer: analyzers) {
+            System.out.println(analyzer.processText(text));
+        }
+        System.out.println("+++++++++++++");
         return Label.OK;
     }
-
 
 }
 

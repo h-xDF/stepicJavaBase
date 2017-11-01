@@ -1,6 +1,6 @@
-package module_3_5.Step9;
+package module_3_5.step9;
 
-abstract public class KeywordAnalyzer {
+abstract public class KeywordAnalyzer implements TextAnalyzer {
 
     abstract String[] getKeywords();
 
@@ -10,11 +10,10 @@ abstract public class KeywordAnalyzer {
 
         for (String word: getKeywords()) {
 
-            if (text.indexOf(word) != -1) {
-                return Label.OK;
+            if (text.contains(word)) {
+                return getLabel();
             }
         }
-
-        return getLabel();
+        return Label.OK;
     }
 }
