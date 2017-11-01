@@ -11,7 +11,7 @@ public class TooLongTextAnalyzer implements TextAnalyzer {
     @Override
     public Label processText(String text) {
 
-        if(text.length() < size) {
+        if(text.length() <= size) {
             return Label.OK;
         } else {
             return Label.TOO_LONG;
