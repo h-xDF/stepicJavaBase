@@ -12,6 +12,6 @@ public class ExTest {
         System.out.println(inst1.getValue());
         System.out.println(inst2.getValue());
 
-        System.out.println(InitEnum.values()[new Random().nextInt(InitEnum.values().length)].getValue());
+        System.out.println(InitEnum.values()[new Random().nextInt(InitEnum.values().length)].getValue()); /
     }
 }
